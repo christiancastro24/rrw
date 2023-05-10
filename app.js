@@ -19,8 +19,8 @@ const sim = document.getElementById("yes");
 sim.addEventListener("click", () => {
   let timerInterval;
   Swal.fire({
-    title: "Obrigado 😍",
-    html: "Prometo lhe fazer feliz. 💘",
+    title: "Obrigado por aceitar me dar o cu 😍",
+    html: "Prometo não te machucar. 💘",
     timer: 2000,
     timerProgressBar: true,
     didOpen: () => {
@@ -28,15 +28,12 @@ sim.addEventListener("click", () => {
       const b = Swal.getHtmlContainer().querySelector("b");
       timerInterval = setInterval(() => {
         b.textContent = Swal.getTimerLeft();
-      }, 100);
+      }, 1000);
     },
     willClose: () => {
       clearInterval(timerInterval);
     },
   }).then((result) => {
-    /* Read more about handling dismissals below */
-    if (result.dismiss === Swal.DismissReason.timer) {
-      console.log("I was closed by the timer");
-    }
+    window.location.href = "https://www.youtube.com/watch?v=AtTcDsHyoZM"
   });
 });
