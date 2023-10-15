@@ -19,8 +19,8 @@ const sim = document.getElementById("yes");
 sim.addEventListener("click", () => {
   let timerInterval;
   Swal.fire({
-    title: "Obrigado por aceitar me dar o cu 😍",
-    html: "Prometo não te machucar. 💘",
+    title: "Obrigado por aceitar namorar comigo 😍",
+    html: "💘",
     timer: 2000,
     timerProgressBar: true,
     didOpen: () => {
@@ -34,6 +34,6 @@ sim.addEventListener("click", () => {
       clearInterval(timerInterval);
     },
   }).then((result) => {
-    window.location.href = "https://www.youtube.com/watch?v=AtTcDsHyoZM"
+    window.location.href = "https://www.youtube.com/watch?v=lp-EO5I60KA"
   });
 });
